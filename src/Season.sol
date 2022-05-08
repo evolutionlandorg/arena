@@ -1,6 +1,6 @@
-pragma solidity ^0.6.7;
+pragma solidity ^0.8.13;
 
-contract Season is Initializable, DSStop {
+contract Season is DSStop {
     event Enter(address indexed user, uint256 indexed season, address token, uint256 id);
     event NewSeason(uint256 indexed season, uint256 indexed end);
 
