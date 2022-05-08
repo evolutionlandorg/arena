@@ -2,6 +2,7 @@
 pragma solidity ^0.8.13;
 
 import "ds-stop/stop.sol";
+import "zeppelin-solidity/utils/Strings.sol";
 import "zeppelin-solidity/token/ERC1155/ERC1155.sol";
 import "zeppelin-solidity/token/ERC1155/extensions/ERC1155Burnable.sol";
 import "zeppelin-solidity/token/ERC1155/extensions/ERC1155Supply.sol";

@@ -1,5 +1,7 @@
 pragma solidity ^0.8.13;
 
+import "ds-stop/stop.sol";
+
 contract Season is DSStop {
     event Enter(address indexed user, uint256 indexed season, address token, uint256 id);
     event NewSeason(uint256 indexed season, uint256 indexed end);
@@ -13,7 +15,7 @@ contract Season is DSStop {
     // token => id => season
     mapping(address => mapping(uint256 => uint256)) seasonOf;
     // user => (season => bool)
-    mapping(address => mapping(uint256 => uint256) public passOf;
+    mapping(address => mapping(uint256 => uint256)) public passOf;
 
     function enter(address ticket, uint256 id) external {
         address user = msg.sender;
@@ -53,7 +55,7 @@ contract Season is DSStop {
 
     function onERC1155Received(
         address, /*operator*/
-        address, from
+        address from,
         uint256 id,
         uint256 value,
         bytes calldata /*data*/

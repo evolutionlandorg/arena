@@ -1,4 +1,5 @@
-all    :; dapp --use solc:0.8.13 build
+-include .env
+all    :; dapp build
 clean  :; dapp clean
 test   :; dapp test
 deploy :; dapp create Arena
