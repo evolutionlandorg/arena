@@ -2,9 +2,9 @@ pragma solidity ^0.8.13;
 
 import "ds-stop/stop.sol";
 import "zeppelin-solidity/token/ERC20/IERC20.sol";
-import "zeppelin-solidity/token/ERC20/SafeERC20.sol";
-import "../interfaces/ITicket.sol";
-import "../interfaces/ISeason.sol";
+import "zeppelin-solidity/token/ERC20/utils/SafeERC20.sol";
+import "./interfaces/ITicket.sol";
+import "./interfaces/ISeason.sol";
 
 contract Shop is DSStop {
     using SafeERC20 for IERC20;
@@ -61,8 +61,8 @@ contract Shop is DSStop {
         emit Buy(user, season, Chest.Ticket, amount);
     }
 
-    function _giveTicket(address user, uint season, uint amount) internal {
-        require(ITicket(TICKET).create(user, season, amount), "!give");
+    function _giveTicket(address user, uint season, uint amount) internal returns (uint) {
+        return ITicket(TICKET).create(user, season, amount);
     }
 
     function setFee(uint256 _ticketFee, uint256 _cooFee) external auth {

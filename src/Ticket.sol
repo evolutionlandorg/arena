@@ -7,10 +7,8 @@ import "zeppelin-solidity/token/ERC1155/ERC1155.sol";
 import "zeppelin-solidity/token/ERC1155/extensions/ERC1155Burnable.sol";
 import "zeppelin-solidity/token/ERC1155/extensions/ERC1155Supply.sol";
 
-contract Ticket is DSStop, ERC1155, ERC1155Burnable, ERC1155Supply {
+contract Ticket is DSStop, ERC1155(""), ERC1155Burnable, ERC1155Supply {
     using Strings for uint256;
-
-    constructor() ERC1155("ipfs://") {}
 
     mapping(uint256 => bytes32) private metadataHash;
 
@@ -22,15 +20,15 @@ contract Ticket is DSStop, ERC1155, ERC1155Burnable, ERC1155Supply {
         _setURI(newuri);
     }
 
-    function uri(uint256 id) external view returns (string memory) {
+    function uri(uint256 id) public view override returns (string memory) {
         return toFullURI(metadataHash[id], id);
     }
 
-    function toFullURI(bytes32 hash, uint256 id) external view returns (string memory) {
+    function toFullURI(bytes32 hash, uint256 id) public pure returns (string memory) {
         return
             string(
                 abi.encodePacked(
-                    base,
+                    "ipfs://",
                     hash2base32(hash),
                     "/",
                     id.toString(),

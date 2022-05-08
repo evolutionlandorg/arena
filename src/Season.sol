@@ -1,6 +1,7 @@
 pragma solidity ^0.8.13;
 
 import "ds-stop/stop.sol";
+import "zeppelin-solidity/token/ERC1155/IERC1155.sol";
 
 contract Season is DSStop {
     event Enter(address indexed user, uint256 indexed season, address token, uint256 id);
@@ -27,14 +28,14 @@ contract Season is DSStop {
     }
 
     function _enter(address user, address ticket, uint256 id) internal {
-        require(endOf(season) > block.timestamp, "!start");
+        require(endOf[season] > block.timestamp, "!start");
         require(seasonOf[ticket][id] == season, "!ticket");
         require(canEnter(user) == false, "enter");
         passOf[user][season] = 1;
-        Enter(user, season, ticket, id);
+        emit Enter(user, season, ticket, id);
     }
 
-    function canEnter(address user) external returns (bool) {
+    function canEnter(address user) public view returns (bool) {
         return passOf[user][season] == 1;
     }
 
@@ -49,8 +50,8 @@ contract Season is DSStop {
         emit NewSeason(season, end);
     }
 
-    function setTicketSeason(address ticket, uint256 id, uint256 season) external auth {
-        seasonOf[ticket][id] = season;
+    function setTicketSeason(address ticket, uint256 id, uint256 _season) external auth {
+        seasonOf[ticket][id] = _season;
     }
 
     function onERC1155Received(
@@ -59,7 +60,7 @@ contract Season is DSStop {
         uint256 id,
         uint256 value,
         bytes calldata /*data*/
-    ) external pure returns (bytes4) {
+    ) external returns (bytes4) {
         require(value == 1, "!one");
         address token = msg.sender;
         _enter(from, token, id);
@@ -68,11 +69,11 @@ contract Season is DSStop {
 
     function onERC1155BatchReceived(
         address, /*operator*/
-        address, /*from*/
+        address from,
         uint256[] calldata ids,
         uint256[] calldata values,
         bytes calldata /*data*/
-    ) external pure returns (bytes4) {
+    ) external returns (bytes4) {
         address token = msg.sender;
         for (uint i = 0; i < ids.length; ++i) {
             require(values[i] == 1, "!one");
