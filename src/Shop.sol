@@ -11,7 +11,7 @@ contract Shop is DSStop {
     using SafeERC20 for IERC20;
 
     event Buy(address indexed user, uint256 indexed season, Chest chest, uint256 amount);
-	event ClaimedTokens(address indexed token, address indexed to, uint256 amount);
+    event ClaimedTokens(address indexed token, address indexed to, uint256 amount);
 
     enum Chest {
         COO,
