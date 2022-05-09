@@ -5,7 +5,7 @@ import "zeppelin-solidity/access/Ownable.sol";
 import "zeppelin-solidity/token/ERC20/ERC20.sol";
 import "zeppelin-solidity/token/ERC20/extensions/ERC20Burnable.sol";
 
-contract TetherUSD is ERC20, ERC20Burnable, Ownable {
+contract USDT is ERC20, ERC20Burnable, Ownable {
     constructor() ERC20("Tether USD", "USDT") {
         _mint(msg.sender, 1000000 * 10 ** decimals());
     }
