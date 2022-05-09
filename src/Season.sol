@@ -66,7 +66,7 @@ contract Season is DSStop {
         return tickets.length;
     }
 
-    // check if of the ticket is valid in this season
+    // check id of the ticket is valid in this season
     function check(address ticket, uint id) public view returns (bool) {
         return seasonOf[ticket][id] == season;
     }
