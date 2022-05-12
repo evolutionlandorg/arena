@@ -62,8 +62,8 @@ contract Shop is DSStop {
         emit Buy(user, season, Chest.Ticket, amount);
     }
 
-    function _giveTicket(address user, uint season, uint amount) internal returns (uint) {
-        return ITicket(TICKET).create(user, season, amount);
+    function _giveTicket(address user, uint season, uint amount) internal {
+        ITicket(TICKET).create(user, season, amount);
     }
 
     function setFee(uint256 _ticketFee, uint256 _cooFee) external auth {
