@@ -21,14 +21,16 @@ contract Shop is DSStop {
     address public immutable USDT;
     address public immutable TICKET;
     address public immutable SEASON;
+    address public immutable DEV_POOL;
 
     uint256 public ticketFee = 20e6;
     uint256 public cooFee = 20e6;
 
-    constructor(address usdt, address ticket, address season) {
+    constructor(address usdt, address ticket, address season, address dev_pool) {
         USDT = usdt;
         TICKET = ticket;
         SEASON = season;
+        DEV_POOL = dev_pool;
     }
 
     function buy(Chest chest, uint amount) external {
@@ -46,7 +48,7 @@ contract Shop is DSStop {
         uint season = ISeason(SEASON).season();
         require(season > 0, "!start");
         address user = msg.sender;
-        IERC20(USDT).safeTransferFrom(user, address(this), cooFee * amount);
+        IERC20(USDT).safeTransferFrom(user, DEV_POOL, cooFee * amount);
         emit Buy(user, season, Chest.COO, amount);
     }
 
