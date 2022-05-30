@@ -16,10 +16,6 @@ contract Ticket is DSStop, ERC1155(""), ERC1155Burnable, ERC1155Supply {
         metadataHash[id] = hash;
     }
 
-    function setURI(string memory newuri) public auth {
-        _setURI(newuri);
-    }
-
     function uri(uint256 id) public view override returns (string memory) {
         return toFullURI(metadataHash[id], id);
     }
@@ -28,7 +24,7 @@ contract Ticket is DSStop, ERC1155(""), ERC1155Burnable, ERC1155Supply {
         return
             string(
                 abi.encodePacked(
-                    "ipfs://",
+                    "ipfs://bafybei",
                     hash2base32(hash),
                     "/",
                     id.toString(),
