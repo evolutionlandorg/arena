@@ -2,14 +2,11 @@
 pragma solidity ^0.8.13;
 
 import "ds-stop/stop.sol";
-import "zeppelin-solidity/utils/Strings.sol";
 import "zeppelin-solidity/token/ERC1155/ERC1155.sol";
 import "zeppelin-solidity/token/ERC1155/extensions/ERC1155Burnable.sol";
 import "zeppelin-solidity/token/ERC1155/extensions/ERC1155Supply.sol";
 
 contract Ticket is DSStop, ERC1155(""), ERC1155Burnable, ERC1155Supply {
-    using Strings for uint256;
-
     mapping(uint256 => bytes32) private metadataHash;
 
     function setMedadataHash(uint256 id, bytes32 hash) public auth {
@@ -17,18 +14,16 @@ contract Ticket is DSStop, ERC1155(""), ERC1155Burnable, ERC1155Supply {
     }
 
     function uri(uint256 id) public view override returns (string memory) {
-        return toFullURI(metadataHash[id], id);
+        return toFullURI(metadataHash[id]);
     }
 
-    function toFullURI(bytes32 hash, uint256 id) public pure returns (string memory) {
+    function toFullURI(bytes32 hash) public pure returns (string memory) {
         return
             string(
                 abi.encodePacked(
                     "ipfs://bafybei",
                     hash2base32(hash),
-                    "/",
-                    id.toString(),
-                    ".json"
+                    "/medadata.json"
                 )
             );
     }
