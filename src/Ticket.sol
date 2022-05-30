@@ -23,7 +23,7 @@ contract Ticket is DSStop, ERC1155(""), ERC1155Burnable, ERC1155Supply {
                 abi.encodePacked(
                     "ipfs://bafybei",
                     hash2base32(hash),
-                    "/medadata.json"
+                    "/metadata.json"
                 )
             );
     }
