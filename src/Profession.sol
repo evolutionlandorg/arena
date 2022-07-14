@@ -20,11 +20,8 @@ contract Profession is DSStop {
         DEV_POOL = dev_pool;
     }
 
-    /// @dev Change profession for universal nft
-    /// @param land The landid which the nft located
-    /// @param nft The nft token address
-    /// @param id The token id of nft
-    /// @param extra Extra data which could custom by backend
+    /// @dev Buy profession ticket to change apostle profession
+    /// @param amount Amount of profession ticket to buy
     function buyProfessionTicket(uint256 amount) external stoppable {
         address user = msg.sender;
         IERC20(USDT).safeTransferFrom(user, DEV_POOL, fee * amount);
