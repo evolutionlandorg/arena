@@ -1,0 +1,18 @@
+{
+    "name": "Apostle Arena Season Medal",
+    "image": "ipfs://QmaZjXFsD1QpMXVva1iFYuShXorferuTRRz5rFfCAq4jQh/Bronze.png",
+    "attributes": [
+        {
+            "trait_type": "Season",
+            "value": "I"
+        },
+        {
+            "trait_type": "Division",
+            "value": "Bronze"
+        },
+        {
+            "trait_type": "Rank",
+            "value": "11"
+        }
+    ]
+}
