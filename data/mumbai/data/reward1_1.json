@@ -1,0 +1,236 @@
+[
+    {
+        "erc1155": [],
+        "erc20": {
+            "amounts": [
+                "547180848"
+            ],
+            "contractAddresses": [
+                "0x1e80aE72d184116687E7697c1B57da067C8d31c1"
+            ]
+        },
+        "erc721": [],
+        "to": "0x5a91fe74aB3788FF58187ACAf3fB0A039534428E"
+    },
+    {
+        "erc1155": [],
+        "erc20": {
+            "amounts": [
+                "434600565"
+            ],
+            "contractAddresses": [
+                "0x1e80aE72d184116687E7697c1B57da067C8d31c1"
+            ]
+        },
+        "erc721": [],
+        "to": "0xC4C84ECe914dd0F37ef0b3258320C24E479ab381"
+    },
+    {
+        "erc1155": [],
+        "erc20": {
+            "amounts": [
+                "342964283"
+            ],
+            "contractAddresses": [
+                "0x1e80aE72d184116687E7697c1B57da067C8d31c1"
+            ]
+        },
+        "erc721": [],
+        "to": "0x2DCD241135d2d5b2E9bA2926e436c054FDF8BF0B"
+    },
+    {
+        "erc1155": [],
+        "erc20": {
+            "amounts": [
+                "268083200"
+            ],
+            "contractAddresses": [
+                "0x1e80aE72d184116687E7697c1B57da067C8d31c1"
+            ]
+        },
+        "erc721": [],
+        "to": "0xe32c5673b152571E57976bF3A75068917DA2Da9C"
+    },
+    {
+        "erc1155": [],
+        "erc20": {
+            "amounts": [
+                "214466560"
+            ],
+            "contractAddresses": [
+                "0x1e80aE72d184116687E7697c1B57da067C8d31c1"
+            ]
+        },
+        "erc721": [],
+        "to": "0x048C592C8FDcCE21ff6AF18365D37208a9954f95"
+    },
+    {
+        "erc1155": [],
+        "erc20": {
+            "amounts": [
+                "171573248"
+            ],
+            "contractAddresses": [
+                "0x1e80aE72d184116687E7697c1B57da067C8d31c1"
+            ]
+        },
+        "erc721": [],
+        "to": "0x3AAb6779d50181CE73a1fe5b2f545A09eB70EEC8"
+    },
+    {
+        "erc1155": [],
+        "erc20": {
+            "amounts": [
+                "137258598"
+            ],
+            "contractAddresses": [
+                "0x1e80aE72d184116687E7697c1B57da067C8d31c1"
+            ]
+        },
+        "erc721": [],
+        "to": "0x4839D2bf149ea7dBe1584e049e1d9c9b326D8149"
+    },
+    {
+        "erc1155": [],
+        "erc20": {
+            "amounts": [
+                "109806879"
+            ],
+            "contractAddresses": [
+                "0x1e80aE72d184116687E7697c1B57da067C8d31c1"
+            ]
+        },
+        "erc721": [],
+        "to": "0x75d56B0103ea3b596D344e153CC89012aF3bD22A"
+    },
+    {
+        "erc1155": [],
+        "erc20": {
+            "amounts": [
+                "87845503"
+            ],
+            "contractAddresses": [
+                "0x1e80aE72d184116687E7697c1B57da067C8d31c1"
+            ]
+        },
+        "erc721": [],
+        "to": "0x0f67c5F0491C970E08BC9514258F4949699f48bd"
+    },
+    {
+        "erc1155": [],
+        "erc20": {
+            "amounts": [
+                "70276402"
+            ],
+            "contractAddresses": [
+                "0x1e80aE72d184116687E7697c1B57da067C8d31c1"
+            ]
+        },
+        "erc721": [],
+        "to": "0xa1511E5C683A007056CAa1d9A8D6A37464826280"
+    },
+    {
+        "erc1155": [],
+        "erc20": {
+            "amounts": [
+                "56221122"
+            ],
+            "contractAddresses": [
+                "0x1e80aE72d184116687E7697c1B57da067C8d31c1"
+            ]
+        },
+        "erc721": [],
+        "to": "0x77A46C4B2863b65417d547E4E5AA0aFD701972f2"
+    },
+    {
+        "erc1155": [],
+        "erc20": {
+            "amounts": [
+                "44976898"
+            ],
+            "contractAddresses": [
+                "0x1e80aE72d184116687E7697c1B57da067C8d31c1"
+            ]
+        },
+        "erc721": [],
+        "to": "0x502096777a0F1357C5Ac9b7CFc9C929ec77bFF6D"
+    },
+    {
+        "erc1155": [],
+        "erc20": {
+            "amounts": [
+                "35981518"
+            ],
+            "contractAddresses": [
+                "0x1e80aE72d184116687E7697c1B57da067C8d31c1"
+            ]
+        },
+        "erc721": [],
+        "to": "0x38f58Fa2519d27017f96fb3C25B6A350bCa2F10A"
+    },
+    {
+        "erc1155": [],
+        "erc20": {
+            "amounts": [
+                "28785214"
+            ],
+            "contractAddresses": [
+                "0x1e80aE72d184116687E7697c1B57da067C8d31c1"
+            ]
+        },
+        "erc721": [],
+        "to": "0xd88f34679b914C4C677DdC78ae0bAD7cdF6760cc"
+    },
+    {
+        "erc1155": [],
+        "erc20": {
+            "amounts": [
+                "23028172"
+            ],
+            "contractAddresses": [
+                "0x1e80aE72d184116687E7697c1B57da067C8d31c1"
+            ]
+        },
+        "erc721": [],
+        "to": "0xd172C9C051f0C5514a14D7585C29Bb80C6012745"
+    },
+    {
+        "erc1155": [],
+        "erc20": {
+            "amounts": [
+                "18422537"
+            ],
+            "contractAddresses": [
+                "0x1e80aE72d184116687E7697c1B57da067C8d31c1"
+            ]
+        },
+        "erc721": [],
+        "to": "0x33ff04090d2730f5b8433CF996A7993d837D4bc2"
+    },
+    {
+        "erc1155": [],
+        "erc20": {
+            "amounts": [
+                "14738030"
+            ],
+            "contractAddresses": [
+                "0x1e80aE72d184116687E7697c1B57da067C8d31c1"
+            ]
+        },
+        "erc721": [],
+        "to": "0xAeD623644E8E8726216C2CA5e5572dBB23C1A0AC"
+    },
+    {
+        "erc1155": [],
+        "erc20": {
+            "amounts": [
+                "11790424"
+            ],
+            "contractAddresses": [
+                "0x1e80aE72d184116687E7697c1B57da067C8d31c1"
+            ]
+        },
+        "erc721": [],
+        "to": "0x00173F19c43e19a571E4478Ddd316A944c36A2a3"
+    }
+]
