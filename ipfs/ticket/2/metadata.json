@@ -1,0 +1,11 @@
+{
+  "name": "Apostle Arena Ticket",
+  "description": "After staking in season contract will have the chance to participate rank mode.",
+  "image": "ipfs://Qmb7uXzb64Lktd1JwKUr8Z284Uc2Ma3PFG6dabJfM4nF7G",
+  "attributes": [
+    {
+      "trait_type": "Season",
+      "value": "II"
+    }
+  ]
+}
