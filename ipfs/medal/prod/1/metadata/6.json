@@ -1,0 +1,18 @@
+{
+    "name": "Apostle Arena Season Medal",
+    "image": "ipfs://QmNrQBV1kWMTMcLS3SxMDVg9cUN2itoCf7ZzXcpghsJTmx/images/Dimond.png",
+    "attributes": [
+        {
+            "trait_type": "Season",
+            "value": "I"
+        },
+        {
+            "trait_type": "Division",
+            "value": "Dimond"
+        },
+        {
+            "trait_type": "Rank",
+            "value": "6"
+        }
+    ]
+}
