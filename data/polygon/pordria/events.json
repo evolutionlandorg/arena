@@ -1,0 +1,16 @@
+{
+    "name": "Apostle Arena",
+    "timestamp": "2022-09-06T00:00:00.000Z",
+    "version": { "major": 0, "minor": 1, "patch": 0 },
+    "logoURI": "https://pordria.evolution.land/logos/apostle-arena.png",
+    "events": [
+      {
+        "chainId": 137,
+        "address": "0xFBf3E359c9c1fbC99dB14e9f1715ae133bAd8511",
+        "name": "Cryptomeda Supported Season 1 Rewards",
+        "detail":"https://twitter.com/Evolution_Land/status/1546422566612799488",
+        "logoURI": "https://pordria.evolution.land/logos/apostle-arena.png",
+        "proofURI": "https://raw.githubusercontent.com/evolutionlandorg/arena/main/data/polygon/proof/tech_1.json"
+      }
+    ]
+  }
