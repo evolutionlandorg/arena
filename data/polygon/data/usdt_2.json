@@ -1,0 +1,41 @@
+[
+    {
+        "erc1155": [],
+        "erc20": {
+            "amounts": [
+                "19152000"
+            ],
+            "contractAddresses": [
+                "0xc2132D05D31c914a87C6611C10748AEb04B58e8F"
+            ]
+        },
+        "erc721": [],
+        "to": "0x75d56B0103ea3b596D344e153CC89012aF3bD22A"
+    },
+    {
+        "erc1155": [],
+        "erc20": {
+            "amounts": [
+                "13888000"
+            ],
+            "contractAddresses": [
+                "0xc2132D05D31c914a87C6611C10748AEb04B58e8F"
+            ]
+        },
+        "erc721": [],
+        "to": "0xC4C84ECe914dd0F37ef0b3258320C24E479ab381"
+    },
+    {
+        "erc1155": [],
+        "erc20": {
+            "amounts": [
+                "8960000"
+            ],
+            "contractAddresses": [
+                "0xc2132D05D31c914a87C6611C10748AEb04B58e8F"
+            ]
+        },
+        "erc721": [],
+        "to": "0xe32c5673b152571E57976bF3A75068917DA2Da9C"
+    }
+]
